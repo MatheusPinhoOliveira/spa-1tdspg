@@ -1,0 +1,47 @@
+.tabelaProd {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 2px solid #000000;
+
+    .tabelaCabecalho {
+        background-color: #8716b4;
+        & th {
+            border: 2px solid #000000;
+            text-align: center;
+        }
+    }
+    .tabelaCorpo {
+        & tr {
+            height: 48px !important;
+            &:hover {
+                background-color: #ccc;
+            }
+            & td {
+                border: 2px solid #000000;
+                & img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 35%;
+                    /* transition: width 3s; */
+                    &:hover {
+                        width: 100%;
+                    }
+                }
+                &:first-child {
+                    text-align: center;
+                }
+                &:last-child {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .tabelaRodape {
+        background-color: #8716b4;
+        & td {
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}
